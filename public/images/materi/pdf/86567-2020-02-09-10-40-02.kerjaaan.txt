@@ -1,0 +1,27 @@
+email rifkykrismantoro3@gmail.com
+
+pasword  Pa669250
+
+ Domain
+pateronacademy.com 
+Username
+paterona
+Nama Server
+jatayu.dnsbit.net
+IP Address
+103.8.79.201
+Nameservers
+dns1.rumahosting.com ()
+dns2.rumahosting.com ()
+
+fa
+Database:
+paterona_tryoutp
+Host:
+localhost
+Username:
+paterona_tryoutp
+Password:
+123paterona123321
+
+https://www.youtube.com/watch?v=YFmN7eTNfNw

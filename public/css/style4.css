@@ -1,0 +1,121 @@
+.paket {
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: blue;
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.daftar-sekarang {
+  background-color: orange;
+  width: 100%;
+}
+
+.daftar-sekarang a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.detail {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.detail li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+ul.detail li.title-list {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+ul.detail li.sub-list {
+  color: #333;
+  opacity: 0.8;
+}
+
+ul.detail li.sub-list:hover {
+  opacity: 1;
+}
+
+.start-btn {
+  float: right;
+  background-color: #ff7a00 !important;
+  border: none;
+}
+
+.clear {
+  clear: right;
+}
+
+ul.detail li a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+ul.detail li a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+/* pembayaran section */
+#instagram-btn,
+#transfer-btn {
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+#instagram-btn:hover,
+#transfer-btn:hover {
+  cursor: pointer;
+}
+
+#instagram-btn {
+  background-color: blueviolet;
+}
+
+#instagram-btn,
+#transfer-btn span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#transfer-btn {
+  background-color: blue;
+}
+
+/* step pembayaran */
+.step-pembayaran {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.ig-ss,
+.transfer-ss {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+/* pembahasan */
+.upload-tugas {
+  padding: 20px;
+}
+
+.upload-tugas-anda {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.upload-tugas-anda h4 {
+  font-size: 18px;
+}
