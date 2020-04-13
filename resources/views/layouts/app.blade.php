@@ -192,7 +192,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="{{asset('js/sb-admin-2.min.js')}}"></script>
-  <script src="{{asset('js/sb-admin-2.js')}}"></script>
+  <!-- <script src="{{asset('js/sb-admin-2.js')}}"></script> -->
   
   <script>
 
@@ -200,8 +200,8 @@
       interval: false
   }); 
   </script>
-
-<!--   <script src="{{asset('vendors/js/vendor.bundle.base.js')}}"></script>
+<!-- 
+  <script src="{{asset('vendors/js/vendor.bundle.base.js')}}"></script>
   <script src="{{asset('vendors/js/vendor.bundle.addons.js')}}"></script>
   <script src="{{asset('js/off-canvas.js')}}"></script>
   <script src="{{asset('js/misc.js')}}"></script>

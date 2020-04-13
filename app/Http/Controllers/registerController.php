@@ -57,8 +57,8 @@ class registerController extends Controller
         ]);
         
       
-        // alert()->success('Berhasil.','Data telah ditambahkan!');
-        return redirect()->route('register-peserta.index');
+        alert()->success('Berhasil.','Sukses Registrasi');
+        return redirect()->route('login');
 
    }
 }

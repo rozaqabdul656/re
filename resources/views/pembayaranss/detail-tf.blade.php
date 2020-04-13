@@ -28,18 +28,22 @@
                                 </a>
                              </div>
                              
-                        </div>
-                        <br>
-                        <br>
-
+                       
                          @endforeach
+                     </div>  
                         <a href="{{url('konfirmasi-tf/'.$ids.'/'.$idb)}}" class="btn btn-primary pull-left">Konfirmasi</a>
-                  
                         <a href="{{ url()->previous() }}" class="btn btn-light pull-right">Back</a>
+                  
+                      <center>
+                        <a href="{{url('delete-tf/'.$ids.'/'.$idb)}}" class="btn btn-danger center">Hapus</a>
+                      
+                      </center>
+                        
                   
                     </div>
                   </div>
                 </div>
               </div>
 </div>
+
 @endsection

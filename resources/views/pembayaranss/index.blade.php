@@ -44,7 +44,14 @@
                           </th>
                           <th>
                             Action
+
+                                <a href="{{url('konfirmasi-allss')}}">
+                                 <button class="btn btn-info pull-right">Kofirmasi All Data Screenshoot</button>
+                         
+                              </a>
+                          
                           </th>
+
                         </tr>
                       </thead>
                       <tbody>
@@ -90,6 +97,11 @@
                           </th>
                           <th>
                             Action
+                              <a href="{{url('konfirmasi-alltf')}}">
+                                 <button class="btn btn-info pull-right">Kofirmasi All Data Transfer</button>
+                         
+                              </a>
+                              
                           </th>
                         </tr>
                       </thead>
@@ -137,10 +149,13 @@
                         </tr>
                       </thead>
                       <tbody>
+                        <?php 
+                      $no1=1;
+                       ?>
                       @foreach($datadone as $datasdone)
                         <tr>
                           <td class="py-1">
-                            {{$nos++}}
+                            {{$no1++}}
                           </td>
                           <td>
                           
@@ -176,10 +191,14 @@
                         </tr>
                       </thead>
                       <tbody>
+                            <?php 
+                      $no2=1;
+                       ?>
+                    
                       @foreach($datafree as $datascdone)
                         <tr>
                           <td class="py-1">
-                            {{$nos++}}
+                            {{$no2++}}
                           </td>
                           <td>
                           

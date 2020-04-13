@@ -83,6 +83,28 @@ public function __construct()
     	   return redirect('pembayaran');
 
     }
+      public function konfirmasiall(){
+   
+
+        DB::table('tb_pembayaran_ss')->update(['keterangan'=> 'konfirmasi']);
+           alert()->success('Berhasil.','Semua Pembayaran Screenshoot Sukses Terkonfirmasi !');
+ 
+           return redirect('pembayaran');
+
+    }
+     public function hapus($id,$id_bidang){
+   
+
+
+        pembayaranssModel::where('id','=',$id)->where('id_bidang',$id_bidang)->delete();
+        
+        alert()->success('Berhasil.','Data telah dihapus!');
+
+
+           return redirect('pembayaran');
+
+    }
+
     public function store(Request $request){
      	$ids=Auth::user()->id;
     	

@@ -60,7 +60,7 @@
                                   </a>
                                   <nbsp>
                                   <a href="{{url('/rangkuman-upload/'.$dataf->id_materi.'/'.$dataf->id_bidang)}}" >
-                                    <button class="btn btn-xs btn-danger">Upload Rangkuman </button>
+                                    <button class="btn btn-xs btn-danger">Upload Tugas </button>
                                   </a>
                                   </div>
                                   <div class="clear"></div>

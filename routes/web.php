@@ -121,8 +121,15 @@ Route::get('fitur-tryout/detail/{data}/{datas}','soalController@indexsoal');
 Route::get('/pembayaran', 'pembayaranssController@index');
 Route::get('pembayaran/detail/{data}/{datas}','pembayaranssController@detail');
 Route::get('konfirmasi/{data}/{datas}','pembayaranssController@konfirmasi');
+Route::get('konfirmasi-alltf','pembayarantfController@konfirmasiall');
+Route::get('konfirmasi-allss','pembayaranssController@konfirmasiall');
+
+Route::get('delete-ss/{data}/{datasbidang}','pembayaranssController@hapus');
+
 Route::get('pembayaran-tf/detail/{data}/{datas}','pembayarantfController@detail');
 Route::get('konfirmasi-tf/{data}/{datasbidang}','pembayarantfController@konfirmasi');
+Route::get('delete-tf/{data}/{datasbidang}','pembayarantfController@hapus');
+
 Route::get('produk-detail/{data}','produkController@detail');
 Route::resource('/pembayaran-free','pembayaranssController');
 Route::resource('/pembayaran-tf','pembayarantfController');

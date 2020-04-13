@@ -40,6 +40,9 @@
                <a href="{{url('konfirmasi/'.$ids.'/'.$idb)}}" class="btn btn-primary pull-left">Konfirmasi</a>
                   
                 <a href="{{ url()->previous() }}" class="btn btn-light pull-right">Back</a>
-                
+                 <center>
+                        <a href="{{url('delete-ss/'.$ids.'/'.$idb)}}" class="btn btn-danger center">Hapus</a>
+                      
+                      </center>
 </div>
 @endsection

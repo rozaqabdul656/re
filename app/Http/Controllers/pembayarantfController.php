@@ -47,10 +47,39 @@ class pembayarantfController extends Controller
 
     }
 
+     public function konfirmasiall(){
+   
+
+        DB::table('tb_pembayaran_tf')->update(['keterangan'=> 'konfirmasi']);
+           alert()->success('Berhasil.','Semua Pembayaran Transfer Sukses Terkonfirmasi !');
+ 
+           return redirect('pembayaran');
+
+    }
+
+    public function hapus($id,$id_bidang){
+   
+
+
+        pembayarantfModel::where('id','=',$id)->where('id_bidang',$id_bidang)->delete();
+
+        alert()->success('Berhasil.','Data telah dihapus!');
+
+
+           return redirect('pembayaran');
+
+    }
+
     public function store(Request $request){
         $ids=Auth::user()->id;
-        
-        $tams=DB::table('tb_pembayaran_tf')->where('id',$ids)->get();
+        $idb=$request->get('bidang');
+           
+        $tams=DB::table('tb_pembayaran_tf')
+
+            ->where('id',$ids)
+
+            ->where('id_bidang',$idb)
+        ->get();
         $ta=1;
         foreach ($tams as $ta) {
             $tam=$ta->id;
