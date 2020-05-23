@@ -1,0 +1,35 @@
+.recomendation {
+  text-align: left;
+  color: #333;
+}
+.recomendation a {
+  font-size: 13px;
+  color: #333;
+  text-decoration: none;
+}
+
+.recomendation img {
+  border-radius: 10px;
+}
+
+#recomendation-side {
+  height: 420px;
+  overflow: auto;
+}
+
+.artikel {
+  box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.artikel img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.typo {
+  padding: 10px;
+}
+
+.typo p {
+  font-size: 14px;
+  opacity: 0.8;
+}
