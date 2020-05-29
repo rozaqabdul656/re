@@ -278,6 +278,7 @@ class soalController extends Controller
     } 
 
     public function indexsoal($id,$ids){
+
         $datas=soal::where('id_bidang','=',$id)->where('id_try_out','=',$ids)->orderBy('id_soal')->get();
         $no=1;
 
@@ -289,7 +290,38 @@ class soalController extends Controller
         foreach ($data as $tos) {
             $to=$tos->try_out;
          }     
-        return view('soal.index',compact('datas','no','paket','to'));  
+        return view('soal.index',compact('datas','no','paket','to', 'id', 'ids'));  
     }    
+
+    public function copySoal($id, $ids)
+    {
+        $bidang = DB::table('tb_bidang')->where('id_bidang', '!=', $id)->get();
+        return view('soal.copy', compact('id', 'ids', 'bidang'));
+    }
+
+    public function copySoalProses($id, $ids, Request $req)
+    {
+        $soal = DB::table('tb_soal')->where('id_bidang','=',$id)->orwhere('id_bidang','=',$id)->get();
+        $kelas = $req->get('kelas');
+        
+        foreach ($soal as $s) {
+            $soal = Soal::create([
+                'soal' => $s->soal,
+                'option_a' => $s->option_a,
+                'option_b' => $s->option_b,
+                'option_c' => $s->option_c,
+                'option_d' => $s->option_d,
+                'option_e' => $s->option_e,
+                'id_bidang' => $kelas,
+                'petunjuk' => $s->petunjuk,
+                'id_try_out'=> $ids,
+                'pengecekan'=> $s->pengecekan,
+                'kunci' => $s->kunci,
+            ]);
+        }
+
+        alert()->success('Berhasil.','Soal telah di Copy!');
+        return redirect('fitur-tryout/detail/'.$id.'/'.$ids);
+    }
 
 }

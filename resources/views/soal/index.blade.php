@@ -16,6 +16,9 @@
     <a href="{{route('fitur-tryout.create')}}" class="btn btn-primary btn-rounded btn-fw">
       <i class="fa fa-plus"></i> Tambah Soal Try Out
     </a>
+    <a href="{{url('fitur-tryout/copy/'.$id.'/'.$ids)}}"" class="btn btn-danger btn-rounded btn-fw">
+      <i class="fa fa-copy"></i> Copy Soal ke Kelas Lain
+    </a>
   </div>
 </div>
 <div class="row mt-3" style="padding:20px;">

@@ -122,6 +122,9 @@ Route::resource('/jenis-tryout', 'crudtryoutController');
 Route::get('fitur-tryout/detail/{data}','soalController@detail');
 
 Route::get('fitur-tryout/detail/{data}/{datas}','soalController@indexsoal');
+Route::get('fitur-tryout/copy/{data}/{datas}','soalController@copySoal');
+Route::get('fitur-tryout/copyProses/{data}/{datas}','soalController@copySoalProses');
+
 Route::get('/pembayaran', 'pembayaranssController@index');
 Route::get('pembayaran/detail/{data}/{datas}','pembayaranssController@detail');
 Route::get('konfirmasi/{data}/{datas}','pembayaranssController@konfirmasi');
